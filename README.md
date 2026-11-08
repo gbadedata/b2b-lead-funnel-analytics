@@ -7,6 +7,8 @@
 ![Code: MIT](https://img.shields.io/badge/code-MIT-green)
 ![Data: CC BY-NC-SA 4.0](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-lightgrey)
 
+**Built with:** Python · pandas · statsmodels · scikit-learn · SciPy · matplotlib · openpyxl · LibreOffice (headless) · pytest · GitHub Actions
+
 This is an end-to-end analysis of a real B2B sales funnel: 8,000 inbound leads, the 842 deals the sales team closed, and the orders those new customers placed afterwards. It covers the questions any business that sells through enquiries and a sales team needs answered, such as brokers, agencies, marketplaces and B2B services. The deliverables are what a manager would use: a data quality log addressed to the data owner, a lead score tested on months it never saw, and an Excel dashboard that runs on live formulas.
 
 <p align="center"><img src="figures/02_conversion_by_source.png" width="760" alt="Conversion by lead source with 95% intervals"></p>
@@ -17,6 +19,7 @@ This is an end-to-end analysis of a real B2B sales funnel: 8,000 inbound leads, 
 - [Key findings](#key-findings)
 - [What I would recommend](#what-i-would-recommend)
 - [The Excel reporting pack](#the-excel-reporting-pack)
+- [The data](#the-data)
 - [How it works](#how-it-works)
 - [Mistakes this analysis is built to avoid](#mistakes-this-analysis-is-built-to-avoid)
 - [Reproduce it](#reproduce-it)
@@ -50,13 +53,13 @@ All conversion figures use leads first contacted from January to May 2018: 5,998
 
 <p align="center"><img src="figures/04_time_to_close.png" width="680" alt="Cumulative conversion by days since first contact, by source"></p>
 
-**5. A simple lead score beats sorting by source, and landing page is why.** A logistic model uses only what is known when the enquiry arrives (source, landing page and weekday). It is trained on January to March and tested once on April and May. Gradient boosting was tried and did not beat it (AUC 0.677), so the simpler model is kept.
+**5. A simple lead score beats sorting by source, and landing page is why.** A logistic model uses only what is known when the enquiry arrives (source, landing page and weekday). It is trained on January to March and tested once on April and May. On those months it reaches ROC AUC 0.696, against 0.624 for ranking by source alone. Calling the top 30% of scored leads first reaches 55% of wins, compared with 42% when ranking by source and 30% at random. Without the landing-page features the AUC falls to 0.640, so the page is what makes the score work. Gradient boosting was tried and did not beat the logistic model (AUC 0.677), so the simpler model is kept.
 
 <p align="center"><img src="figures/05_lead_score_gains.png" width="760" alt="Cumulative gains and calibration of the lead score on the test months"></p>
 
 **6. Raw landing-page rankings are noise.** Of 407 pages, 328 had fewer than 10 leads, so a naive ranking is topped by pages with one lead and a 100% "rate". After beta-binomial shrinkage, the two busiest pages convert at about 20%. The third busiest, page `58326e62`, converts at 4.4% from 495 leads. ([figure](figures/03_landing_page_shrinkage.png))
 
-**7. Conversion isn't the whole story.** Of 621 won sellers with a full 90-day window, sellers won through paid search were the most likely to start selling. Sellers with no recorded source produced 38.1% of the sales value. Sellers classed as "online big" were 15% of deals but 52.5% of sales value. ([figure](figures/06_post_deal_activation.png))
+**7. Conversion isn't the whole story.** Of 621 won sellers with a full 90-day window, 43.6% made a sale within 90 days. Sellers won through paid search were the most likely to start selling (54.2%, against 40.5% for organic search). Social and direct traffic have fewer than 50 deals each, so they can't be ruled out as similar. Sellers with no recorded source produced 38.1% of the sales value. Sellers classed as "online big" were 15% of deals but 52.5% of sales value. ([figure](figures/06_post_deal_activation.png))
 
 ## What I would recommend
 
@@ -80,6 +83,19 @@ All conversion figures use leads first contacted from January to May 2018: 5,998
 <p align="center"><img src="docs/excel_lead_scoring.png" width="820" alt="Lead scoring sheet with decile gains and a capacity input"></p>
 
 The workbook has 153 formulas and zero errors. A test rebuilds it, recalculates it in LibreOffice and checks the results against pandas.
+
+## The data
+
+Four public Olist tables, joined lead to deal to orders:
+
+| Table | Rows | Key fields | Role |
+|---|---:|---|---|
+| Marketing qualified leads | 8,000 | `mql_id`, `first_contact_date`, `landing_page_id`, `origin` | Every inbound lead, June 2017 to May 2018 |
+| Closed deals | 842 | `mql_id`, `seller_id`, `won_date`, `sdr_id`, `sr_id`, `lead_type`, `business_segment` | The leads the sales team won |
+| Order items | 112,650 | `order_id`, `seller_id`, `price` | What won sellers went on to sell |
+| Orders | 99,441 | `order_id`, `order_status`, `order_purchase_timestamp` | When each order was placed, and whether it went through |
+
+Leads join to deals on `mql_id`, deals to order items on `seller_id`, and order items to orders on `order_id`. A schema contract checks types, unique lead IDs, date parsing and that every deal links to a lead, and stops the run if any check fails.
 
 ## How it works
 

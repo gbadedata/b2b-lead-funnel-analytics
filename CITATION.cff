@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this analysis or code, please cite it as below."
+title: "B2B Lead Funnel Analytics"
+abstract: "Source conversion, time to close, a time-split lead score and post-deal value on the Olist marketing funnel, with a formula-driven Excel reporting pack."
+authors:
+  - family-names: Odimayo
+    given-names: Oluwagbade
+repository-code: "https://github.com/gbadedata/b2b-lead-funnel-analytics"
+url: "https://gbadedata.com"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-08"
+keywords:
+  - marketing analytics
+  - sales funnel
+  - lead scoring
+  - data quality
