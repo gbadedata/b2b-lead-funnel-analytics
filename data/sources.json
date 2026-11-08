@@ -1,0 +1,28 @@
+{
+  "mirror": "https://github.com/dujiaying/olist",
+  "mirror_commit": "96d0db2e45e684d5a7069911368d823a19e82d38",
+  "original": {
+    "marketing_funnel": "https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist",
+    "ecommerce": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+  },
+  "licence": "CC BY-NC-SA 4.0 (Olist). Data is downloaded at run time and not committed to this repository.",
+  "files": {
+    "olist_marketing_qualified_leads_dataset.csv": {
+      "sha256": "5537753b7549ce4068e52e2402c29f2773c5375fc0575520ae8f3f301f666573",
+      "bytes": 703836
+    },
+    "olist_closed_deals_dataset.csv": {
+      "sha256": "1433f402d8fff00ca167579de641d9525f6e846368958c166f699ef1b0c31f3d",
+      "bytes": 171352
+    },
+    "olist_orders_dataset.csv": {
+      "sha256": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+      "bytes": 17654914
+    },
+    "olist_order_items_dataset.csv": {
+      "sha256": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+      "bytes": 15438671
+    }
+  },
+  "cross_check": "The two funnel files were also downloaded from https://github.com/Catherinedataa/Olist-Sales-Funnel-Analysis (commit e150c71ec0049ea2b384808e7b2a44179fe93442) and matched byte for byte."
+}

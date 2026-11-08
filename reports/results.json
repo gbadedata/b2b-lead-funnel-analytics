@@ -1,0 +1,1188 @@
+{
+  "settings": {
+    "cohort_start": "2018-01-01",
+    "cohort_end": "2018-05-31",
+    "window_days": 90,
+    "train_end": "2018-03-31",
+    "deal_quality_won_end": "2018-06-01",
+    "order_data_complete_end": "2018-08-31",
+    "min_n_rank": 100,
+    "te_smoothing": 20.0,
+    "bootstrap_reps": 1000,
+    "seed": 7
+  },
+  "cohort": {
+    "start": "2018-01-01",
+    "end": "2018-05-31",
+    "leads": 5998,
+    "wins_90d": 678,
+    "rate_90d": 0.1130376792264088,
+    "wins_any": 781
+  },
+  "coverage": {
+    "all_leads": 8000,
+    "all_deals": 842,
+    "first_won_date": "2017-12-05",
+    "first_contact_min": "2017-06-14",
+    "pre_cohort_leads": 2002,
+    "pre_cohort_rate_any": 0.030469530469530468,
+    "cohort_rate_any": 0.13021007002334112
+  },
+  "monthly": [
+    {
+      "month": "2017-06",
+      "leads": 4,
+      "wins_any": 0,
+      "wins_90d": 0,
+      "rate_any": 0.0,
+      "rate_90d": 0.0
+    },
+    {
+      "month": "2017-07",
+      "leads": 239,
+      "wins_any": 2,
+      "wins_90d": 0,
+      "rate_any": 0.0083682008,
+      "rate_90d": 0.0
+    },
+    {
+      "month": "2017-08",
+      "leads": 386,
+      "wins_any": 9,
+      "wins_90d": 0,
+      "rate_any": 0.0233160622,
+      "rate_90d": 0.0
+    },
+    {
+      "month": "2017-09",
+      "leads": 312,
+      "wins_any": 7,
+      "wins_90d": 0,
+      "rate_any": 0.0224358974,
+      "rate_90d": 0.0
+    },
+    {
+      "month": "2017-10",
+      "leads": 416,
+      "wins_any": 14,
+      "wins_90d": 0,
+      "rate_any": 0.0336538462,
+      "rate_90d": 0.0
+    },
+    {
+      "month": "2017-11",
+      "leads": 445,
+      "wins_any": 18,
+      "wins_90d": 8,
+      "rate_any": 0.0404494382,
+      "rate_90d": 0.0179775281
+    },
+    {
+      "month": "2017-12",
+      "leads": 200,
+      "wins_any": 11,
+      "wins_90d": 6,
+      "rate_any": 0.055,
+      "rate_90d": 0.03
+    },
+    {
+      "month": "2018-01",
+      "leads": 1141,
+      "wins_any": 152,
+      "wins_90d": 129,
+      "rate_any": 0.1332164768,
+      "rate_90d": 0.1130587204
+    },
+    {
+      "month": "2018-02",
+      "leads": 1028,
+      "wins_any": 149,
+      "wins_90d": 128,
+      "rate_any": 0.1449416342,
+      "rate_90d": 0.1245136187
+    },
+    {
+      "month": "2018-03",
+      "leads": 1174,
+      "wins_any": 167,
+      "wins_90d": 141,
+      "rate_any": 0.1422487223,
+      "rate_90d": 0.1201022147
+    },
+    {
+      "month": "2018-04",
+      "leads": 1352,
+      "wins_any": 183,
+      "wins_90d": 171,
+      "rate_any": 0.1353550296,
+      "rate_90d": 0.1264792899
+    },
+    {
+      "month": "2018-05",
+      "leads": 1303,
+      "wins_any": 130,
+      "wins_90d": 109,
+      "rate_any": 0.0997697621,
+      "rate_90d": 0.0836531082
+    }
+  ],
+  "channels": [
+    {
+      "origin": "organic_search",
+      "leads": 1736,
+      "wins": 213,
+      "rate": 0.1226958525,
+      "ci_low": 0.1080897595,
+      "ci_high": 0.1389681335,
+      "share_of_leads": 0.2894298099,
+      "share_of_wins": 0.314159292,
+      "rankable": true
+    },
+    {
+      "origin": "paid_search",
+      "leads": 1182,
+      "wins": 147,
+      "rate": 0.1243654822,
+      "ci_low": 0.1067604622,
+      "ci_high": 0.1444042803,
+      "share_of_leads": 0.1970656886,
+      "share_of_wins": 0.2168141593,
+      "rankable": true
+    },
+    {
+      "origin": "social",
+      "leads": 1051,
+      "wins": 55,
+      "rate": 0.0523311132,
+      "ci_low": 0.0404238183,
+      "ci_high": 0.0674991153,
+      "share_of_leads": 0.175225075,
+      "share_of_wins": 0.081120944,
+      "rankable": true
+    },
+    {
+      "origin": "unknown",
+      "leads": 813,
+      "wins": 157,
+      "rate": 0.1931119311,
+      "ci_low": 0.1674461465,
+      "ci_high": 0.2216643003,
+      "share_of_leads": 0.1355451817,
+      "share_of_wins": 0.2315634218,
+      "rankable": true
+    },
+    {
+      "origin": "direct_traffic",
+      "leads": 380,
+      "wins": 49,
+      "rate": 0.1289473684,
+      "ci_low": 0.0989278731,
+      "ci_high": 0.1663940722,
+      "share_of_leads": 0.0633544515,
+      "share_of_wins": 0.0722713864,
+      "rankable": true
+    },
+    {
+      "origin": "email",
+      "leads": 347,
+      "wins": 12,
+      "rate": 0.0345821326,
+      "ci_low": 0.0198909614,
+      "ci_high": 0.0594656485,
+      "share_of_leads": 0.0578526175,
+      "share_of_wins": 0.017699115,
+      "rankable": true
+    },
+    {
+      "origin": "referral",
+      "leads": 211,
+      "wins": 21,
+      "rate": 0.0995260664,
+      "ci_low": 0.0660201281,
+      "ci_high": 0.1473538181,
+      "share_of_leads": 0.0351783928,
+      "share_of_wins": 0.0309734513,
+      "rankable": true
+    },
+    {
+      "origin": "other",
+      "leads": 114,
+      "wins": 4,
+      "rate": 0.0350877193,
+      "ci_low": 0.0137277191,
+      "ci_high": 0.0867597149,
+      "share_of_leads": 0.0190063354,
+      "share_of_wins": 0.005899705,
+      "rankable": true
+    },
+    {
+      "origin": "display",
+      "leads": 75,
+      "wins": 5,
+      "rate": 0.0666666667,
+      "ci_low": 0.0288096381,
+      "ci_high": 0.1467525017,
+      "share_of_leads": 0.0125041681,
+      "share_of_wins": 0.0073746313,
+      "rankable": false
+    },
+    {
+      "origin": "missing",
+      "leads": 48,
+      "wins": 12,
+      "rate": 0.25,
+      "ci_low": 0.1492048881,
+      "ci_high": 0.3878464375,
+      "share_of_leads": 0.0080026676,
+      "share_of_wins": 0.017699115,
+      "rankable": false
+    },
+    {
+      "origin": "other_publicities",
+      "leads": 41,
+      "wins": 3,
+      "rate": 0.0731707317,
+      "ci_low": 0.0251973733,
+      "ci_high": 0.1942774002,
+      "share_of_leads": 0.0068356119,
+      "share_of_wins": 0.0044247788,
+      "rankable": false
+    }
+  ],
+  "chi2": {
+    "chi2": 134.5482643212781,
+    "dof": 10,
+    "p_value": 5.502991953132202e-24
+  },
+  "odds_ratios": [
+    {
+      "origin": "missing",
+      "odds_ratio": 2.427730644,
+      "or_low": 1.2401371868,
+      "or_high": 4.7526000692,
+      "p_value": 0.0096554315,
+      "p_holm": 0.0579325891,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "unknown",
+      "odds_ratio": 1.703263363,
+      "or_low": 1.3583987369,
+      "or_high": 2.1356807872,
+      "p_value": 3.9581e-06,
+      "p_holm": 3.56233e-05,
+      "significant_after_holm": true
+    },
+    {
+      "origin": "direct_traffic",
+      "odds_ratio": 1.0605972526,
+      "or_low": 0.7602216226,
+      "or_high": 1.4796560621,
+      "p_value": 0.7291197862,
+      "p_holm": 1.0,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "paid_search",
+      "odds_ratio": 1.0153303981,
+      "or_low": 0.8102414594,
+      "or_high": 1.272331606,
+      "p_value": 0.8948617843,
+      "p_holm": 1.0,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "referral",
+      "odds_ratio": 0.8000659559,
+      "or_low": 0.4981944357,
+      "or_high": 1.2848508291,
+      "p_value": 0.3560476975,
+      "p_holm": 1.0,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "other_publicities",
+      "odds_ratio": 0.5598704151,
+      "or_low": 0.1711064359,
+      "or_high": 1.8319292318,
+      "p_value": 0.3375334168,
+      "p_holm": 1.0,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "display",
+      "odds_ratio": 0.4945496613,
+      "or_low": 0.1971907699,
+      "or_high": 1.2403185382,
+      "p_value": 0.1333858427,
+      "p_holm": 0.6669292137,
+      "significant_after_holm": false
+    },
+    {
+      "origin": "social",
+      "odds_ratio": 0.393443622,
+      "or_low": 0.2889334802,
+      "or_high": 0.5357561317,
+      "p_value": 3.2e-09,
+      "p_holm": 3.19e-08,
+      "significant_after_holm": true
+    },
+    {
+      "origin": "email",
+      "odds_ratio": 0.2625102804,
+      "or_low": 0.14493225,
+      "or_high": 0.4754749016,
+      "p_value": 1.01983e-05,
+      "p_holm": 8.15863e-05,
+      "significant_after_holm": true
+    },
+    {
+      "origin": "other",
+      "odds_ratio": 0.2522879676,
+      "or_low": 0.0920279386,
+      "or_high": 0.6916292986,
+      "p_value": 0.0074387344,
+      "p_holm": 0.0520711408,
+      "significant_after_holm": false
+    }
+  ],
+  "unattributed": {
+    "leads": 861,
+    "share_of_leads": 0.14354784928309436,
+    "rate": 0.19628339140534262,
+    "rate_attributed": 0.09908506910648238,
+    "share_of_wins": 0.24926253687315633
+  },
+  "speed": [
+    {
+      "origin": "organic_search",
+      "wins": 213,
+      "median_days": 10.0,
+      "p75_days": 22.0,
+      "within_14d": 0.6384976526
+    },
+    {
+      "origin": "unknown",
+      "wins": 157,
+      "median_days": 9.0,
+      "p75_days": 21.0,
+      "within_14d": 0.6687898089
+    },
+    {
+      "origin": "paid_search",
+      "wins": 147,
+      "median_days": 9.0,
+      "p75_days": 19.0,
+      "within_14d": 0.6326530612
+    },
+    {
+      "origin": "social",
+      "wins": 55,
+      "median_days": 18.0,
+      "p75_days": 35.5,
+      "within_14d": 0.4
+    },
+    {
+      "origin": "direct_traffic",
+      "wins": 49,
+      "median_days": 8.0,
+      "p75_days": 15.0,
+      "within_14d": 0.7346938776
+    },
+    {
+      "origin": "referral",
+      "wins": 21,
+      "median_days": 11.0,
+      "p75_days": 31.0,
+      "within_14d": 0.5714285714
+    },
+    {
+      "origin": "email",
+      "wins": 12,
+      "median_days": 14.5,
+      "p75_days": 27.75,
+      "within_14d": 0.5
+    },
+    {
+      "origin": "missing",
+      "wins": 12,
+      "median_days": 6.5,
+      "p75_days": 9.25,
+      "within_14d": 0.8333333333
+    },
+    {
+      "origin": "display",
+      "wins": 5,
+      "median_days": 10.0,
+      "p75_days": 16.0,
+      "within_14d": 0.6
+    },
+    {
+      "origin": "other",
+      "wins": 4,
+      "median_days": 9.0,
+      "p75_days": 20.25,
+      "within_14d": 0.75
+    },
+    {
+      "origin": "other_publicities",
+      "wins": 3,
+      "median_days": 35.0,
+      "p75_days": 41.5,
+      "within_14d": 0.0
+    }
+  ],
+  "speed_overall": {
+    "median_days": 10.0,
+    "within_14d": 0.6283185840707964
+  },
+  "landing_pages": {
+    "pages": 407,
+    "prior": {
+      "alpha": 1.780097574983103,
+      "beta": 18.416401193723626,
+      "prior_mean": 0.08813891929334099
+    },
+    "pages_under_10_leads": 328,
+    "top3_share_of_leads": 0.32877625875291766,
+    "top_shrunk": [
+      {
+        "page": "22c29808",
+        "leads": 726,
+        "wins": 149,
+        "raw_rate": 0.2052341598,
+        "shrunk_rate": 0.2020648687,
+        "cred_low": 0.1783629038,
+        "cred_high": 0.2266753112
+      },
+      {
+        "page": "b76ef374",
+        "leads": 751,
+        "wins": 152,
+        "raw_rate": 0.2023968043,
+        "shrunk_rate": 0.1994045588,
+        "cred_low": 0.1762036839,
+        "cred_high": 0.2234922899
+      },
+      {
+        "page": "40dec9f3",
+        "leads": 297,
+        "wins": 58,
+        "raw_rate": 0.1952861953,
+        "shrunk_rate": 0.1884639263,
+        "cred_low": 0.1535464366,
+        "cred_high": 0.225617703
+      },
+      {
+        "page": "6b6c0934",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243,
+        "cred_low": 0.060799715,
+        "cred_high": 0.3140436617
+      },
+      {
+        "page": "8515f4df",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243,
+        "cred_low": 0.060799715,
+        "cred_high": 0.3140436617
+      },
+      {
+        "page": "b3346ddd",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243,
+        "cred_low": 0.060799715,
+        "cred_high": 0.3140436617
+      },
+      {
+        "page": "358adb2f",
+        "leads": 20,
+        "wins": 5,
+        "raw_rate": 0.25,
+        "shrunk_rate": 0.1686738344,
+        "cred_low": 0.0828915599,
+        "cred_high": 0.2733558527
+      },
+      {
+        "page": "30077c17",
+        "leads": 39,
+        "wins": 8,
+        "raw_rate": 0.2051282051,
+        "shrunk_rate": 0.1652141221,
+        "cred_low": 0.0933729116,
+        "cred_high": 0.2499898391
+      },
+      {
+        "page": "c35447dc",
+        "leads": 15,
+        "wins": 4,
+        "raw_rate": 0.2666666667,
+        "shrunk_rate": 0.1642236523,
+        "cred_low": 0.0748163432,
+        "cred_high": 0.2755213086
+      },
+      {
+        "page": "fa5a0151",
+        "leads": 15,
+        "wins": 4,
+        "raw_rate": 0.2666666667,
+        "shrunk_rate": 0.1642236523,
+        "cred_low": 0.0748163432,
+        "cred_high": 0.2755213086
+      }
+    ],
+    "top_raw": [
+      {
+        "page": "6b6c0934",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243
+      },
+      {
+        "page": "8515f4df",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243
+      },
+      {
+        "page": "b3346ddd",
+        "leads": 2,
+        "wins": 2,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1703015243
+      },
+      {
+        "page": "3c3d58fa",
+        "leads": 1,
+        "wins": 1,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1311583392
+      },
+      {
+        "page": "5963a9ba",
+        "leads": 1,
+        "wins": 1,
+        "raw_rate": 1.0,
+        "shrunk_rate": 0.1311583392
+      }
+    ],
+    "busy_pages": [
+      {
+        "page": "b76ef374",
+        "leads": 751,
+        "wins": 152,
+        "raw_rate": 0.2023968043,
+        "shrunk_rate": 0.1994045588
+      },
+      {
+        "page": "22c29808",
+        "leads": 726,
+        "wins": 149,
+        "raw_rate": 0.2052341598,
+        "shrunk_rate": 0.2020648687
+      },
+      {
+        "page": "58326e62",
+        "leads": 495,
+        "wins": 22,
+        "raw_rate": 0.0444444444,
+        "shrunk_rate": 0.0461573354
+      },
+      {
+        "page": "ce1a65ab",
+        "leads": 346,
+        "wins": 47,
+        "raw_rate": 0.1358381503,
+        "shrunk_rate": 0.1332074385
+      },
+      {
+        "page": "88740e65",
+        "leads": 306,
+        "wins": 21,
+        "raw_rate": 0.068627451,
+        "shrunk_rate": 0.0698355061
+      },
+      {
+        "page": "40dec9f3",
+        "leads": 297,
+        "wins": 58,
+        "raw_rate": 0.1952861953,
+        "shrunk_rate": 0.1884639263
+      },
+      {
+        "page": "f017be4d",
+        "leads": 224,
+        "wins": 16,
+        "raw_rate": 0.0714285714,
+        "shrunk_rate": 0.0728106163
+      },
+      {
+        "page": "e492ee5e",
+        "leads": 214,
+        "wins": 8,
+        "raw_rate": 0.0373831776,
+        "shrunk_rate": 0.0417602211
+      },
+      {
+        "page": "a7982125",
+        "leads": 132,
+        "wins": 11,
+        "raw_rate": 0.0833333333,
+        "shrunk_rate": 0.0839710353
+      },
+      {
+        "page": "73f31a40",
+        "leads": 113,
+        "wins": 4,
+        "raw_rate": 0.0353982301,
+        "shrunk_rate": 0.0433952666
+      }
+    ]
+  },
+  "scoring": {
+    "train": {
+      "leads": 3343,
+      "wins": 398,
+      "rate": 0.11905474125037392,
+      "first": "2018-01-01",
+      "last": "2018-03-31"
+    },
+    "test": {
+      "leads": 2655,
+      "wins": 280,
+      "rate": 0.10546139359698682,
+      "first": "2018-04-01",
+      "last": "2018-05-31",
+      "unseen_page_share": 0.23088512241054615
+    },
+    "metrics": {
+      "base_rate": {
+        "brier": 0.0945240671579941,
+        "log_loss": 0.33783149859217043
+      },
+      "channel_only": {
+        "roc_auc": 0.6244766917293233,
+        "pr_auc": 0.14764382577031684,
+        "brier": 0.09237131459127043,
+        "log_loss": 0.32618894585143765,
+        "top_10pct": 0.16428571428571428,
+        "top_20pct": 0.3107142857142857,
+        "top_30pct": 0.42142857142857143,
+        "top_50pct": 0.6571428571428571
+      },
+      "logistic_without_page": {
+        "roc_auc": 0.6395458646616541,
+        "pr_auc": 0.15450211163973931,
+        "brier": 0.09233513227912468,
+        "log_loss": 0.32575548351945754,
+        "top_10pct": 0.17857142857142858,
+        "top_20pct": 0.3392857142857143,
+        "top_30pct": 0.45714285714285713,
+        "top_50pct": 0.675
+      },
+      "logistic": {
+        "roc_auc": 0.6956030075187969,
+        "pr_auc": 0.19239522542301785,
+        "brier": 0.09014737057231877,
+        "log_loss": 0.3156317969991341,
+        "top_10pct": 0.21428571428571427,
+        "top_20pct": 0.425,
+        "top_30pct": 0.5535714285714286,
+        "top_50pct": 0.7535714285714286
+      },
+      "gradient_boosting": {
+        "roc_auc": 0.6772736842105263,
+        "pr_auc": 0.1883436168538145,
+        "brier": 0.0907589393325639,
+        "log_loss": 0.3192278356830485,
+        "top_10pct": 0.21428571428571427,
+        "top_20pct": 0.3821428571428571,
+        "top_30pct": 0.5392857142857143,
+        "top_50pct": 0.7464285714285714
+      }
+    },
+    "bootstrap": {
+      "auc_ci": {
+        "channel_only": [
+          0.5926971640075204,
+          0.6593614151020519
+        ],
+        "logistic_without_page": [
+          0.6079542501072795,
+          0.673180193841401
+        ],
+        "logistic": [
+          0.6640614018379684,
+          0.728537858640323
+        ],
+        "gradient_boosting": [
+          0.6460596452233179,
+          0.7108250883206574
+        ]
+      },
+      "auc_diff_vs_channel_only_ci": {
+        "logistic_without_page": [
+          -0.0016819628600216491,
+          0.032849285290788566
+        ],
+        "logistic": [
+          0.04546352255002044,
+          0.09832505734778195
+        ],
+        "gradient_boosting": [
+          0.022271429132010898,
+          0.08525526530595164
+        ]
+      }
+    },
+    "logistic_coefficients": {
+      "source=direct_traffic": 0.045833135594950836,
+      "source=email": -0.2004295850225627,
+      "source=organic_search": 0.04767959019190482,
+      "source=other_small": -0.11739116819095005,
+      "source=paid_search": 0.05392289257440973,
+      "source=referral": -0.10627888376501078,
+      "source=social": -0.06797244528442353,
+      "source=unattributed": 0.16415469835676053,
+      "weekday=0": -0.009702055798801394,
+      "weekday=1": 0.07405806504096057,
+      "weekday=2": -0.05160120987491925,
+      "weekday=3": -0.03468623205343846,
+      "weekday=4": 0.05443130725499264,
+      "weekday=5": -0.01623901357881305,
+      "weekday=6": -0.024360884350759088,
+      "page_rate_te": 0.3416561634168909,
+      "page_log_volume": 0.06470992413528613,
+      "page_unseen": 0.0
+    },
+    "calibration_logistic": [
+      {
+        "bin": 1,
+        "leads": 266,
+        "mean_predicted": 0.0415794072,
+        "observed": 0.0413533835
+      },
+      {
+        "bin": 2,
+        "leads": 265,
+        "mean_predicted": 0.0564188194,
+        "observed": 0.0301886792
+      },
+      {
+        "bin": 3,
+        "leads": 266,
+        "mean_predicted": 0.0660161829,
+        "observed": 0.0488721805
+      },
+      {
+        "bin": 4,
+        "leads": 265,
+        "mean_predicted": 0.0776067471,
+        "observed": 0.0716981132
+      },
+      {
+        "bin": 5,
+        "leads": 266,
+        "mean_predicted": 0.0876344536,
+        "observed": 0.0676691729
+      },
+      {
+        "bin": 6,
+        "leads": 265,
+        "mean_predicted": 0.0997861138,
+        "observed": 0.0716981132
+      },
+      {
+        "bin": 7,
+        "leads": 265,
+        "mean_predicted": 0.1190388097,
+        "observed": 0.1396226415
+      },
+      {
+        "bin": 8,
+        "leads": 266,
+        "mean_predicted": 0.1512447379,
+        "observed": 0.1353383459
+      },
+      {
+        "bin": 9,
+        "leads": 265,
+        "mean_predicted": 0.1818913613,
+        "observed": 0.2188679245
+      },
+      {
+        "bin": 10,
+        "leads": 266,
+        "mean_predicted": 0.2346186679,
+        "observed": 0.2293233083
+      }
+    ]
+  },
+  "deal_quality": {
+    "deals": 621,
+    "won_before": "2018-06-01",
+    "activation_rate": 0.4363929146537842,
+    "by_origin": [
+      {
+        "origin": "organic_search",
+        "deals": 195,
+        "active": 79,
+        "gmv_90d": 87748.16,
+        "activation_rate": 0.4051282051,
+        "ci_low": 0.3387010061,
+        "ci_high": 0.4752212315,
+        "median_gmv_if_active": 390.0,
+        "gmv_per_deal": 449.9905641026,
+        "share_of_gmv": 0.2652578534,
+        "rankable": true
+      },
+      {
+        "origin": "unknown",
+        "deals": 148,
+        "active": 60,
+        "gmv_90d": 126178.79,
+        "activation_rate": 0.4054054054,
+        "ci_low": 0.3296683026,
+        "ci_high": 0.485929004,
+        "median_gmv_if_active": 350.69,
+        "gmv_per_deal": 852.5593918919,
+        "share_of_gmv": 0.3814315307,
+        "rankable": true
+      },
+      {
+        "origin": "paid_search",
+        "deals": 131,
+        "active": 71,
+        "gmv_90d": 71935.3,
+        "activation_rate": 0.5419847328,
+        "ci_low": 0.4566836503,
+        "ci_high": 0.6248935484,
+        "median_gmv_if_active": 329.99,
+        "gmv_per_deal": 549.1244274809,
+        "share_of_gmv": 0.2174564488,
+        "rankable": true
+      },
+      {
+        "origin": "social",
+        "deals": 48,
+        "active": 22,
+        "gmv_90d": 12528.14,
+        "activation_rate": 0.4583333333,
+        "ci_low": 0.3257502185,
+        "ci_high": 0.5970916691,
+        "median_gmv_if_active": 289.235,
+        "gmv_per_deal": 261.0029166667,
+        "share_of_gmv": 0.037871877,
+        "rankable": true
+      },
+      {
+        "origin": "direct_traffic",
+        "deals": 46,
+        "active": 21,
+        "gmv_90d": 8664.43,
+        "activation_rate": 0.4565217391,
+        "ci_low": 0.3215451042,
+        "ci_high": 0.5982006503,
+        "median_gmv_if_active": 198.92,
+        "gmv_per_deal": 188.357173913,
+        "share_of_gmv": 0.0261920945,
+        "rankable": true
+      },
+      {
+        "origin": "referral",
+        "deals": 18,
+        "active": 8,
+        "gmv_90d": 11480.76,
+        "activation_rate": 0.4444444444,
+        "ci_low": 0.245592311,
+        "ci_high": 0.6628393057,
+        "median_gmv_if_active": 813.25,
+        "gmv_per_deal": 637.82,
+        "share_of_gmv": 0.034705705,
+        "rankable": false
+      },
+      {
+        "origin": "email",
+        "deals": 12,
+        "active": 5,
+        "gmv_90d": 6129.69,
+        "activation_rate": 0.4166666667,
+        "ci_low": 0.1932574619,
+        "ci_high": 0.6804926643,
+        "median_gmv_if_active": 148.0,
+        "gmv_per_deal": 510.8075,
+        "share_of_gmv": 0.0185297152,
+        "rankable": false
+      },
+      {
+        "origin": "missing",
+        "deals": 11,
+        "active": 3,
+        "gmv_90d": 581.0,
+        "activation_rate": 0.2727272727,
+        "ci_low": 0.0974588057,
+        "ci_high": 0.565650293,
+        "median_gmv_if_active": 189.8,
+        "gmv_per_deal": 52.8181818182,
+        "share_of_gmv": 0.001756331,
+        "rankable": false
+      },
+      {
+        "origin": "display",
+        "deals": 5,
+        "active": 1,
+        "gmv_90d": 273.0,
+        "activation_rate": 0.2,
+        "ci_low": 0.036223161,
+        "ci_high": 0.6244717359,
+        "median_gmv_if_active": 273.0,
+        "gmv_per_deal": 54.6,
+        "share_of_gmv": 0.000825264,
+        "rankable": false
+      },
+      {
+        "origin": "other",
+        "deals": 4,
+        "active": 1,
+        "gmv_90d": 5283.98,
+        "activation_rate": 0.25,
+        "ci_low": 0.0455860626,
+        "ci_high": 0.6993639476,
+        "median_gmv_if_active": 5283.98,
+        "gmv_per_deal": 1320.995,
+        "share_of_gmv": 0.0159731804,
+        "rankable": false
+      },
+      {
+        "origin": "other_publicities",
+        "deals": 3,
+        "active": 0,
+        "gmv_90d": 0.0,
+        "activation_rate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.5615060804,
+        "median_gmv_if_active": null,
+        "gmv_per_deal": 0.0,
+        "share_of_gmv": 0.0,
+        "rankable": false
+      }
+    ],
+    "by_lead_type": [
+      {
+        "lead_type": "online_medium",
+        "deals": 255,
+        "active": 122,
+        "gmv_90d": 89807.95,
+        "activation_rate": 0.4784313725,
+        "ci_low": 0.4178944755,
+        "ci_high": 0.5396084916,
+        "median_gmv_if_active": 264.4,
+        "gmv_per_deal": 352.1880392157,
+        "share_of_gmv": 0.296910863,
+        "rankable": true
+      },
+      {
+        "lead_type": "online_big",
+        "deals": 94,
+        "active": 59,
+        "gmv_90d": 158878.79,
+        "activation_rate": 0.6276595745,
+        "ci_low": 0.5267247801,
+        "ci_high": 0.718569655,
+        "median_gmv_if_active": 849.97,
+        "gmv_per_deal": 1690.199893617,
+        "share_of_gmv": 0.5252635057,
+        "rankable": true
+      },
+      {
+        "lead_type": "industry",
+        "deals": 88,
+        "active": 30,
+        "gmv_90d": 15489.16,
+        "activation_rate": 0.3409090909,
+        "ci_low": 0.2503898647,
+        "ci_high": 0.4447373979,
+        "median_gmv_if_active": 179.8,
+        "gmv_per_deal": 176.0131818182,
+        "share_of_gmv": 0.0512081599,
+        "rankable": true
+      },
+      {
+        "lead_type": "offline",
+        "deals": 77,
+        "active": 20,
+        "gmv_90d": 7200.43,
+        "activation_rate": 0.2597402597,
+        "ci_low": 0.1748906648,
+        "ci_high": 0.367424183,
+        "median_gmv_if_active": 188.7,
+        "gmv_per_deal": 93.5120779221,
+        "share_of_gmv": 0.023805085,
+        "rankable": true
+      },
+      {
+        "lead_type": "online_small",
+        "deals": 56,
+        "active": 20,
+        "gmv_90d": 19566.9,
+        "activation_rate": 0.3571428571,
+        "ci_low": 0.244563927,
+        "ci_high": 0.4880635428,
+        "median_gmv_if_active": 393.9,
+        "gmv_per_deal": 349.4089285714,
+        "share_of_gmv": 0.0646894308,
+        "rankable": true
+      },
+      {
+        "lead_type": "online_beginner",
+        "deals": 37,
+        "active": 13,
+        "gmv_90d": 8842.19,
+        "activation_rate": 0.3513513514,
+        "ci_low": 0.2182540663,
+        "ci_high": 0.5124127048,
+        "median_gmv_if_active": 242.85,
+        "gmv_per_deal": 238.9781081081,
+        "share_of_gmv": 0.0292328493,
+        "rankable": true
+      },
+      {
+        "lead_type": "online_top",
+        "deals": 11,
+        "active": 5,
+        "gmv_90d": 2689.03,
+        "activation_rate": 0.4545454545,
+        "ci_low": 0.2127095754,
+        "ci_high": 0.7199122443,
+        "median_gmv_if_active": 329.99,
+        "gmv_per_deal": 244.4572727273,
+        "share_of_gmv": 0.0088901063,
+        "rankable": false
+      }
+    ]
+  },
+  "data_quality": [
+    {
+      "code": "DQ01",
+      "severity": "high",
+      "check": "Deal records cover the whole lead period",
+      "affected": 2002,
+      "share": 0.25025,
+      "finding": "The first recorded deal is dated 05 Dec 2017, but leads start 14 Jun 2017. Leads first contacted before 2018 show 3.0% conversion against 13.0% after.",
+      "impact": "Conversion for 2017 leads looks far lower than it was, which would distort any trend or channel comparison that includes them.",
+      "recommendation": "Analyse only leads from January 2018, and confirm with the CRM owner when deal logging began."
+    },
+    {
+      "code": "DQ02",
+      "severity": "high",
+      "check": "Every lead has a recorded source",
+      "affected": 1159,
+      "share": 0.144875,
+      "finding": "60 leads have a blank origin and 1,099 are marked 'unknown'. In the 2018 cohort these unattributed leads convert at 19.6% within 90 days, against 9.9% for attributed leads.",
+      "impact": "The best-converting group has no source, so marketing spend cannot be tied to the leads that matter most.",
+      "recommendation": "Make source a required field on the enquiry form and CRM, and audit how 'unknown' leads are created (for example manual or phone entries)."
+    },
+    {
+      "code": "DQ03",
+      "severity": "high",
+      "check": "Sales rep is recorded on every lead",
+      "affected": 7158,
+      "share": 0.89475,
+      "finding": "SDR and sales rep IDs exist only on won deals; lost leads carry no rep.",
+      "impact": "Rep conversion rates cannot be measured, only rep deal counts, which reward volume rather than skill.",
+      "recommendation": "Record the assigned rep when a lead is first contacted, not when it is won."
+    },
+    {
+      "code": "DQ04",
+      "severity": "low",
+      "check": "Won date is on or after first contact",
+      "affected": 1,
+      "share": 0.0011876485,
+      "finding": "1 deal(s) are dated before the lead's first contact.",
+      "impact": "Minor: these are treated as same-day wins and flagged.",
+      "recommendation": "Check whether first contact is logged late for some leads."
+    },
+    {
+      "code": "DQ05",
+      "severity": "medium",
+      "check": "Declared monthly revenue is usable",
+      "affected": 797,
+      "share": 0.9465558195,
+      "finding": "797 of 842 deals (95%) record declared revenue as 0, which looks like 'not asked' rather than true zero; 2 record 1,000,000 or more (maximum 50,000,000).",
+      "impact": "Deal value cannot be estimated from this field, so revenue analysis must use actual orders instead.",
+      "recommendation": "Store 'not provided' as blank, not 0, and add a sense check on very large values."
+    },
+    {
+      "code": "DQ06",
+      "severity": "medium",
+      "check": "Deal profile fields are filled in",
+      "affected": 756,
+      "share": 0.9222090261,
+      "finding": "Missing share: has_company 93%, has_gtin 92%, average_stock 92%, declared_product_catalog_size 92%.",
+      "impact": "These fields cannot support segmentation or scoring.",
+      "recommendation": "Either make them part of the closing checklist or drop them from the form."
+    },
+    {
+      "code": "DQ07",
+      "severity": "low",
+      "check": "Behaviour profile has one clean value",
+      "affected": 193,
+      "share": 0.229216152,
+      "finding": "177 deals have no profile and 16 hold two values (for example 'cat, wolf').",
+      "impact": "Profile-based reporting needs a rule for blanks and multiple values.",
+      "recommendation": "Use a single-select field with an explicit 'not assessed' option."
+    },
+    {
+      "code": "DQ08",
+      "severity": "medium",
+      "check": "Won sellers appear in order data",
+      "affected": 463,
+      "share": 0.5498812352,
+      "finding": "463 of 842 won sellers have no order in the public order data.",
+      "impact": "The public order file may not hold every order, so seller activation measured here is a lower bound.",
+      "recommendation": "Use the full order table when this analysis runs on internal data."
+    },
+    {
+      "code": "DQ09",
+      "severity": "low",
+      "check": "Order data is complete to its last date",
+      "affected": 21,
+      "share": 0.0002111805,
+      "finding": "Only 21 orders fall after 31 Aug 2018, against thousands per month before.",
+      "impact": "Post-deal windows are cut at 31 August 2018 to avoid counting missing orders as no sales.",
+      "recommendation": "Confirm the extract date before using the last weeks of any order file."
+    },
+    {
+      "code": "DQ10",
+      "severity": "low",
+      "check": "Landing pages have enough traffic to compare",
+      "affected": 628,
+      "share": 0.1047015672,
+      "finding": "328 of 407 landing pages had fewer than 10 leads in the 2018 cohort.",
+      "impact": "Raw page conversion rates are noisy; pages are ranked on shrunk rates instead.",
+      "recommendation": "Group pages by campaign or template so they can be compared."
+    },
+    {
+      "code": "DQ11",
+      "severity": "pass",
+      "check": "Lead IDs are unique and every deal links to a lead",
+      "affected": 0,
+      "share": 0.0,
+      "finding": "8,000 unique leads; all 842 deals match a lead.",
+      "impact": "None.",
+      "recommendation": "None."
+    }
+  ],
+  "workbook": {
+    "formulas": 153,
+    "errors": 0
+  }
+}
